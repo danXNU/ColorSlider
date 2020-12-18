@@ -25,6 +25,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+#if canImport(UIKit)
 import UIKit
 
 /// :nodoc:
@@ -76,3 +77,5 @@ internal struct Gradient {
 		return HSBColor.between(color: leftColor, and: rightColor, percent: scaledPercentage)
 	}
 }
+
+#endif

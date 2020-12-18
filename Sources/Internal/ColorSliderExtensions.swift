@@ -25,6 +25,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+#if canImport(UIKit)
 import UIKit
 
 /// :nodoc:
@@ -59,3 +60,5 @@ internal extension UITouch {
 		return (0.0..<1.0).clamp(progress)
 	}
 }
+
+#endif

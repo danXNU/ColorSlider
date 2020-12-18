@@ -25,6 +25,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+#if canImport(UIKit)
 import UIKit
 
 /// :nodoc:
@@ -72,3 +73,5 @@ internal extension UIColor {
 		self.init(hue: hsbColor.hue, saturation: hsbColor.saturation, brightness: hsbColor.brightness, alpha: 1)
 	}
 }
+
+#endif

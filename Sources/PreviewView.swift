@@ -25,6 +25,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+#if canImport(UIKit)
 import UIKit
 
 public typealias PreviewView = UIView & ColorSliderPreviewing
@@ -66,3 +67,5 @@ public protocol ColorSliderPreviewing {
 	/// - parameter state: The new state of the preview view.
 	func transition(to state: PreviewState)
 }
+
+#endif

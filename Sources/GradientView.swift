@@ -25,6 +25,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+#if canImport(UIKit)
 import UIKit
 
 /// A gradient view that acts as the background of any `ColorSlider`.
@@ -261,3 +262,5 @@ fileprivate extension Gradient {
 		return Gradient(colors: colors, locations: locations)
 	}
 }
+
+#endif

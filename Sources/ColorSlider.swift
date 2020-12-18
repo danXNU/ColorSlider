@@ -25,6 +25,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+#if canImport(UIKit)
 import UIKit
 
 /// The orientation in which the `ColorSlider` is drawn.
@@ -312,3 +313,5 @@ extension ColorSlider {
 		}
 	}
 }
+
+#endif
